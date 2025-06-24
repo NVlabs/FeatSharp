@@ -1,0 +1,6 @@
+# @package _global_
+
+normalizer_mode: phi-s
+
+normalizer_args:
+  num_batches: ${num_training_steps}

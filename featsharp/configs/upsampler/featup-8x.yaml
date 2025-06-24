@@ -1,0 +1,9 @@
+# @package _global_
+
+upsampler_type: jbu_stack
+upsample_factor: 8
+
+# n_jitters: 2
+
+viz:
+  job_type: featup-${upsample_factor}x${viz_name_suffix}

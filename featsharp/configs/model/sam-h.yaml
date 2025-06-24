@@ -1,0 +1,9 @@
+# @package _global_
+
+output_subdir: sam/huge
+model_type: sam
+model_args:
+    size: huge
+
+viz:
+  group: sam-h

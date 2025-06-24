@@ -1,0 +1,12 @@
+# @package _global_
+
+output_subdir: dfn_clip
+
+model_type: open_clip
+model_args:
+  model_name: ViT-H-14-378-quickgelu
+  checkpoint: dfn5b
+  ac_dtype: bfloat16
+
+viz:
+  group: dfn-clip

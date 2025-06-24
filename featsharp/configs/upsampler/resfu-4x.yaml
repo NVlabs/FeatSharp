@@ -1,0 +1,11 @@
+# @package _global_
+
+upsampler_type: resfu
+upsample_factor: 4
+
+grid_weight: 1.0
+
+tv_weight: 0.0
+
+viz:
+  job_type: resfu-${upsample_factor}x${viz_name_suffix}

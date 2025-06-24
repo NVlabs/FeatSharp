@@ -1,0 +1,9 @@
+# @package _global_
+
+output_subdir: siglip2/so400m-512
+model_type: siglip2
+model_args:
+  version: siglip2-so400m-512
+
+viz:
+  group: siglip2-so400m-512

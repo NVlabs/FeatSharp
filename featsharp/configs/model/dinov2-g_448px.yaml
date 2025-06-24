@@ -1,0 +1,10 @@
+# @package _global_
+
+output_subdir: dinov2/giant/448
+model_type: dinov2
+model_args:
+    arch: dinov2_vitg14_reg
+    base_res: 448
+
+viz:
+  group: dinov2-g_448

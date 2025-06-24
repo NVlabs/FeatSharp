@@ -1,0 +1,11 @@
+# @package _global_
+
+upsampler_type: resfu_tiled
+upsample_factor: 2
+
+grid_weight: 1.0
+
+tv_weight: 0.0
+
+viz:
+  job_type: resfu_tiled-${upsample_factor}x${viz_name_suffix}

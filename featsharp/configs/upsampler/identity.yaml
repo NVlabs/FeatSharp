@@ -1,0 +1,11 @@
+# @package _global_
+
+upsampler_type: identity
+upsample_factor: 1
+
+grid_weight: 2.0
+
+tv_weight: 0.0
+
+viz:
+  job_type: identity${viz_name_suffix}

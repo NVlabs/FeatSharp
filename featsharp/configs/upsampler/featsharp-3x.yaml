@@ -1,0 +1,11 @@
+# @package _global_
+
+upsampler_type: featsharp.no-ln.inputs-jafar-tiles
+upsample_factor: 3
+
+grid_weight: 2.0
+
+tv_weight: 0.0
+
+viz:
+  job_type: featsharp-${upsample_factor}x${viz_name_suffix}

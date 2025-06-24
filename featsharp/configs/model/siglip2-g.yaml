@@ -1,0 +1,9 @@
+# @package _global_
+
+output_subdir: siglip2/giant
+model_type: siglip2
+model_args:
+  version: siglip2-g-384
+
+viz:
+  group: siglip2-g-384

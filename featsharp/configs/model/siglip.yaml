@@ -1,0 +1,11 @@
+# @package _global_
+
+output_subdir: siglip
+model_type: open_clip
+model_args:
+  model_name: ViT-SO400M-14-SigLIP-384
+  checkpoint: webli
+  ac_dtype: bfloat16
+
+viz:
+  group: siglip

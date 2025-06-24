@@ -1,0 +1,10 @@
+# @package _global_
+
+output_subdir: paligemma
+model_type: hfhub
+model_args:
+    repo: google/paligemma-3b-pt-448
+    interpolate_pos_encoding: true
+
+viz:
+  group: paligemma

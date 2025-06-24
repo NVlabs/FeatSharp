@@ -1,0 +1,10 @@
+# @package _global_
+
+output_subdir: radio
+model_type: radio
+model_args:
+  arch: radio_v2.5-l
+  base_res: 512
+
+viz:
+  group: radio-l_512

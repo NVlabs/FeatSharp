@@ -1,0 +1,68 @@
+defaults:
+  - _self_
+  - datasets: default
+
+# Base path where all experiments will be stored
+output_base: /lustre/fsw/portfolios/llmservice/users/mranzinger/output/featsharp
+output_subdir: ''
+output_root: ${output_base}/${output_subdir}
+
+# Dataset args
+num_training_steps: 3000
+val_frequency: 1000
+metric_frequency: 50
+
+input_size: 0
+compile_model: true
+activation_type: token
+
+# Upsampling args
+outlier_detection: true
+
+downsampler_type: attention
+downsampler_kernel_size: 9
+
+n_jitters: 5
+random_projection: 128
+crf_weight: 0.0
+tv_weight: 0.0
+mmd_weight: 0.0
+distance_fn: mse
+
+# Default normalizer
+normalizer_mode: phi-s
+normalizer_args:
+  num_batches: 3000
+
+bias_buffer: true
+cond_bias_weight: 0.0
+
+# Training args
+batch_size: 4
+epochs: 1
+num_gpus: 1
+local_rank: 0
+num_workers: 10
+lr: 5e-4
+precision: 32
+warmup_steps: 100
+skip_first_val: false
+spectral_reparam: true
+
+# No need to change
+hydra:
+  run:
+    dir: "."
+  output_subdir: ~
+
+viz_name_suffix: ""
+
+viz:
+  # type: tensorboard
+  type: wandb
+  # type: none
+  entity: adlr
+  project: feat_sharp
+
+dir_prefix: ''
+name: ${model_type}_${upsampler_type}-${upsample_factor}x_norm-${normalizer_mode}

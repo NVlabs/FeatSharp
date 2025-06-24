@@ -1,0 +1,11 @@
+# @package _global_
+
+train_data_dir:
+ - [/lustre/fsw/portfolios/llmservice/projects/llmservice_nlp_fm/datasets/captioning/nvclip/hires, 9]
+ - [/lustre/fsw/portfolios/llmservice/projects/llmservice_nlp_fm/datasets/ocr/scene-text/scene-text/text_ocr/webdataset, 1]
+dist_train_data_dir:
+ - [/lustre/fsw/portfolios/llmservice/projects/llmservice_nlp_fm/datasets/captioning/nvclip/hires, 4]
+ - [/lustre/fsw/portfolios/llmservice/projects/llmservice_nlp_fm/datasets/ocr/scene-text/scene-text/text_ocr/webdataset, 1]
+val_data_dir:
+ - [/lustre/fsw/portfolios/llmservice/projects/llmservice_nlp_fm/datasets/segmentation/sam/stage1, 2]
+ - [/lustre/fsw/portfolios/llmservice/projects/llmservice_nlp_fm/datasets/ocr/scene-text/scene-text/text_ocr/webdataset, 1]

@@ -29,6 +29,10 @@ For business inquiries, please visit our website and submit the form: [NVIDIA Re
 
 FeatSharp is a method of upsampling the features of vision foundation models that adheres as strictly as possible to what they theoretically might have produced, assuming they could run at the higher resolution. This is particularly advantageous for Vision Transformer (ViT) models where they tend to be resolution inflexible, and also low resolution (e.g. in the 224 to 448px range). FeatSharp helps work around this resolution limitation by learning to upsample via a multiview consistency formulation, where features that are consistent across viewpoints are preserved, and those that are not consistent are suppressed. We are now using this technique to train our latest RADIO models.
 
+## Pretrained Weights
+
+Due to legal restrictions, we're still working on making these available.
+
 ## Getting Started
 
 ### Datasets
